@@ -14,3 +14,11 @@ Takes as input a folder and crawls through each document in that folder. Within 
 Search Engine:
 Takes as input a String. Uses the hash map to find where the key word occured in the set of document and returns back the list in order of page rank. Has a interface created with HTML and CSS, allowing for the program to be deployed using a apache server.
 
+Directory Structure:
+The backend web crawler is located in - SearchEngineFront / src / java / searchengine
+The front end web view is located in  - SearchEngineFront / web
+
+Requires:
+Java
+JSP
+Apached Web Server
