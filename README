@@ -1,1 +1,24 @@
-Hello Wolrd!
+README Search Engine
+**********************************
+Authors: Jeremy Bohrer and Lou Brand 
+Created On: 3/12/2013
+Code Location: src/java/searchengine and web
+**********************************
+
+Index Data Structure:
+How the information in the search engine is stored. Each word is a key within a hash table. Within each value is a max heap. The max heap contains a custom class called a WordResult. The WordResult object is uniquely identified by a key word and the document the key word is found in. It also contains its document ranking of the key word by counting the number of times the key word appears in a document, divided by the length of the document. The max heap is then sorted by this WordResult rank. 
+
+Document Crawler:
+Takes as input a folder and crawls through each document in that folder. Within each document it crawls through each word. Stores the word and document in a WordResult class. Each time the word appears in a document it updates the amount of times it occurs. At the end of the document crawling the program serializes the Index Data Structure to save it.
+
+Search Engine:
+Takes as input a String. Uses the hash map to find where the key word occured in the set of document and returns back the list in order of page rank. Has a interface created with HTML and CSS, allowing for the program to be deployed using a apache server.
+
+Directory Structure:
+The backend web crawler is located in - SearchEngineFront / src / java / searchengine
+The front end web view is located in  - SearchEngineFront / web
+
+Requires:
+Java
+JSP
+Apached Web Server
