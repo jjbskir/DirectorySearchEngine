@@ -3,6 +3,11 @@ README Search Engine
 Authors: Jeremy Bohrer and Lou Brand 
 Created On: 3/12/2013
 Code Location: src/java/searchengine and web
+
+Requires:
+Java
+JSP
+Apached Web Server
 **********************************
 
 Index Data Structure:
